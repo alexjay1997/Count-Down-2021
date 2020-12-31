@@ -34,7 +34,7 @@ background-repeat: no-repeat;
 background-size: cover;
 
 background-position: center;
-
+overflow:auto;
 
 }
 .timer{
