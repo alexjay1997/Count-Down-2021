@@ -45,6 +45,7 @@ overflow:auto;
     margin:20px auto;
     text-shadow: 5px 5px 7px  rgba(219, 105, 52, 0.568);
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	display:none;
 }
 .count-down-text{
     color:white;
@@ -311,13 +312,13 @@ var div =document.getElementById("timer");
    result+=":"+((diffMi<10)?"0"+diffMi:diffMi);
    result+=":"+((diffS<10)?"0"+diffS:diffS);
    div.innerHTML=result;
-   if(result< "00:59:00"){
-    document.getElementById("timer").style.color="red";
-   }
-   if(result<="00:00:00"){
-    document.getElementById("timer").style.color="white";
-   }
-   if(result=="00:00:00"){
+  // if(result< "00:59:00"){
+   // document.getElementById("timer").style.color="red";
+  // }
+  // if(result<="00:00:00"){
+  //  document.getElementById("timer").style.color="white";
+ //  }
+  // if(result=="00:00:00"){
        document.getElementById("countdown_wrapper").style.backgroundImage="url('bg2.jpg')";
        document.getElementById("rocket1").style.visibility="visible";
        document.getElementById("rocket2").style.visibility="visible";
@@ -328,7 +329,8 @@ var div =document.getElementById("timer");
        document.getElementById("ox").style.visibility="visible";
        document.getElementById("ox-img").style.animationName="ox";
        document.getElementById("sound").autoplay="true";
-   }
+	  
+  // }
    
  },1000);
     </script>
