@@ -54,6 +54,11 @@ background-position: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .timer{
+    font-size: 60px;
+  }
+}
 .rocket1{
     position: relative;
     top:0px;
